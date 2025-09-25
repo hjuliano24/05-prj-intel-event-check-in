@@ -376,3 +376,28 @@ select {
     grid-template-columns: 1fr;
   }
 }
+
+/*Congratulations*/
+#congrats{
+  background-color: #0071c5;
+  color: rgb(243, 242, 247);
+  background: linear-gradient(300deg,#cddce4,#0068b5,#00c7fd);
+  background-size: 180% 180%;
+  animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+tr:hover {
+  background-color: #e3f0f4;
+}
