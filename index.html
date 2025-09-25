@@ -37,6 +37,16 @@
     <div class="container">
       <!-- Feedback message -->
       <p id="greeting"></p>
+      <!-- Congratulation message-->
+      <div id="congrats" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" style="display: none;" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+          <div class="modal-content">
+          <h1>🎉🎉Congratulations🎉🎉</h1>
+          <p>We have reached the attendee goal!!!</p>
+          <p id = "winningTeam"></p>
+          </div>
+        </div>
+      </div>
 
       <!-- Check-in form -->
       <form class="check-in" id="checkInForm">
@@ -80,6 +90,21 @@
             <span class="team-count" id="powerCount">0</span>
           </div>
         </div>
+      </div>
+
+      <div>
+        <h3>Attendee List</h3>
+        <table class="table table-striped table-bordered table-hover">
+          <thead>
+            <tr>
+              <th scope="col" style="width: 15%;">Name</th>
+              <th scope="col" style="width: 15%;">Team</th>
+            </tr>
+          </thead>
+          <tbody id="attendee-list">
+          </tbody>
+        </table>
+
       </div>
     </div>
 
